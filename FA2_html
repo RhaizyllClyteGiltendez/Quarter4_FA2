@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nested Loop</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<p>[Enter a number between 2 and 10.]</p>
+	<label for="firstNum"></label>
+	<input type="number" id="firstNum" min="2" max="10">
+	<label for="lastNum">by</label>
+	<input type="number" id="lastNum" min="2" max="10">
+	<br><br>
+	<button onclick="MultiplicationTable()">Click here when ready!</button>
+	<div id="DisplayOutput"></div>
+	<script src="file.js"></script>
+</body>
+</html>
