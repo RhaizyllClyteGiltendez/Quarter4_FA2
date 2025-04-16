@@ -1,0 +1,21 @@
+function MultiplicationTable() {
+	const firstValue = parseInt(document.getElementById("firstNum").value);
+	const lastValue = parseInt(document.getElementById("lastNum").value);
+	const outputBox = document.getElementById("DisplayOutput");
+
+	if (firstValue >= 2 && firstValue <= 10 && lastValue >= 2 && lastValue <= 10) {
+		let tableHTML = "<table>";
+		for (let row = 1; row <= firstValue; row++) {
+			tableHTML += "<tr>";
+			for (let col = 1; col <= lastValue; col++) {
+				tableHTML += `<td>${row * col}</td>`;
+			}
+			tableHTML += "</tr>";
+		}
+		tableHTML += "</table>";
+		outputBox.innerHTML = tableHTML;
+	} else {
+		alert("Please enter numbers between 2 and 10");
+		outputBox.innerHTML = "";
+	}
+}
